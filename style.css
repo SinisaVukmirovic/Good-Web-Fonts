@@ -1,0 +1,148 @@
+:root {
+    --bg-color: #1a3333;
+    --tab-bg: #1e4344;
+    --links-color: #43eaec;
+    --nav-bg: #2f8585;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: sans-serif;
+    background: var(--bg-color);
+    color: #eee;
+}
+
+nav {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    background: var(--nav-bg);
+    padding: .5em 0;
+    text-align: center;
+    z-index: 10;
+}
+    nav img, nav h1 {
+        margin: 0 .5em;
+    }
+
+.container {
+    margin: 3rem auto;
+    width: 800px;
+    max-width: 95%;
+}
+
+.font-fam {
+    padding: 1.5em 2em .5em;
+    background: var(--tab-bg);
+    margin: 1.5em 0;
+    transition: box-shadow .4s;
+}
+    .font-fam:hover {
+        box-shadow: 0 0 3px var(--links-color);
+    }
+
+p.size-175 {font-size: 1.75rem}
+p.size-15 {font-size: 1.5rem}
+p.size-125 {font-size: 1.25rem}
+
+.name-link {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: .5em;
+    padding-bottom: .5em;
+    border-bottom: 4px solid var(--bg-color);
+}
+    .name-link h2 {
+        color: #fff;
+        margin-left: 10%;
+    }
+    .name-link a i {
+        font-size: 1.5rem;
+        color: var(--links-color);
+        transition: color .4s;
+    }
+        .name-link a i:hover {
+            color: #eee;
+        }
+
+.css-import {
+    font-family: sans-serif;
+    margin-top: 1em;
+    padding: .5em 1em;
+    border-top: 4px solid var(--bg-color);
+
+    position: relative;
+}
+    .css-import h4 {
+        font-weight: normal;
+        margin-bottom: .5em;
+    }
+    .css-import h5 {
+        font-weight: normal;
+        color: var(--links-color);
+        margin: .5em 0;
+    }
+    .css-import .copy-btn {
+        background: var(--links-color);
+        color: var(--bg-color);
+        font-weight: bold;
+        padding: .25em .5em;
+        border-radius: .25em;
+        cursor: pointer;
+        transition: background .4s;
+
+        position: absolute;
+        bottom: 1em; right: 0; 
+    }
+        .css-import .copy-btn:hover {
+            background: #eee;
+        }
+
+footer {
+    padding: .5em;
+    background: var(--nav-bg);
+    color: #111;
+    text-align: center;
+}
+
+/* Custom scroll bars style */
+/* width */
+::-webkit-scrollbar {
+    width: 6px;
+    /* border: solid 2px var(--tab-bg); */
+    background: var(--tab-bg);
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+    background: var(--nav-bg);
+    /* border: solid 2px var(--dark-color); */
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+    background: var(--links-color); 
+}
+
+/* media queries for smaller screens */
+@media only screen and (max-width: 768px) {
+    html {
+        font-size: 14px;
+    }
+}
+@media only screen and (max-width: 567px) {
+    html {
+        font-size: 12px;
+    }
+    .font-fam {
+        padding: .5em 1em;
+    }
+}
