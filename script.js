@@ -23,15 +23,15 @@ const fontFamilies = [
     {
         name: `Gruppo`,
         visit: `https://fonts.google.com/specimen/Gruppo`,
-        link: `<link href="https://fonts.googleapis.com/css?family=Squada+One&display=swap" rel="stylesheet">`,
-        import: `@import url('https://fonts.googleapis.com/css?family=Squada+One&display=swap');`,
+        link: `<link href="https://fonts.googleapis.com/css?family=Gruppo&display=swap" rel="stylesheet">`,
+        import: `@import url('https://fonts.googleapis.com/css?family=Gruppo&display=swap');`,
         family: `font-family: 'Gruppo', cursive;`
     },
     {
         name: `Muli`,
         visit: `https://fonts.google.com/specimen/Muli`,
-        link: `<link href="https://fonts.googleapis.com/css?family=Gruppo&display=swap" rel="stylesheet">`,
-        import: `@import url('https://fonts.googleapis.com/css?family=Gruppo&display=swap');`,
+        link: `<link href="https://fonts.google.com/specimen/Muli" rel="stylesheet">`,
+        import: `@import url('https://fonts.googleapis.com/css?family=Muli&display=swap');`,
         family: `font-family: 'Muli', sans-serif;`
     },
 ];
